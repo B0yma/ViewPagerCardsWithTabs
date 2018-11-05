@@ -1,9 +1,11 @@
 package com.boyma.viewpagercards;
 
+import android.annotation.SuppressLint;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -13,12 +15,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -40,12 +44,16 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
     private CollapsingToolbarLayout collapsing_toolbar;
     private MainActivityViewModel mViewModel;
     private ViewPager viewPager;
+    private DrawerLayout drawer_layout;
+    private Handler handler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         mViewModel = ViewModelProviders.of(this).get(MainActivityViewModel.class);
+
+        handler = new Handler();
 
         initData();
 
@@ -105,7 +113,6 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
             }
         });
         swipe_container.setColorScheme(R.color.colorPrimary, R.color.colorPrimaryDark, R.color.colorAccent);
-
 
 
     }
@@ -173,12 +180,15 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
         appBarLayout.removeOnOffsetChangedListener(this);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
         //System.out.println("verticalOffset:"+verticalOffset);
         if (verticalOffset != 0) {
+            //drawer_layout.setOnTouchListener(null);
             swipe_container.setEnabled(false);
         } else {
+
             swipe_container.setEnabled(true);
         }
     }
