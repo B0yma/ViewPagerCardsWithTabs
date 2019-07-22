@@ -1,11 +1,7 @@
-package com.boyma.viewpagercards;
+package com.boyma.viewpagercards.viewpagercardsfeature.view.cardfragment;
 
 import android.annotation.SuppressLint;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -16,7 +12,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.boyma.viewpagercards.models.Person;
+import com.boyma.viewpagercards.viewpagercardsfeature.MainActivityViewModel;
+import com.boyma.viewpagercards.R;
+import com.boyma.viewpagercards.viewpagercardsfeature.domain.models.Person;
 
 
 public class CardFragment extends Fragment {

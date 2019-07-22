@@ -1,4 +1,4 @@
-package com.boyma.viewpagercards;
+package com.boyma.viewpagercards.viewpagercardsfeature;
 
 import android.annotation.SuppressLint;
 import android.arch.lifecycle.Observer;
@@ -13,24 +13,20 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Pair;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.Toast;
 
-import com.boyma.viewpagercards.Info1Fragment.Info1Fragment;
-import com.boyma.viewpagercards.Info2Fragment.Info2Fragment;
-import com.boyma.viewpagercards.ListFragment.ListFragment;
-import com.boyma.viewpagercards.ListFragment.ListViewModel;
-import com.boyma.viewpagercards.models.Person;
+import com.boyma.viewpagercards.R;
+import com.boyma.viewpagercards.customviews.ShadowTransformer;
+import com.boyma.viewpagercards.viewpagercardsfeature.view.cardfragment.CardFragmentPagerAdapter;
+import com.boyma.viewpagercards.viewpagercardsfeature.view.info1fragment.Info1Fragment;
+import com.boyma.viewpagercards.viewpagercardsfeature.view.info2fragment.Info2Fragment;
+import com.boyma.viewpagercards.viewpagercardsfeature.view.listfragment.ListFragment;
+import com.boyma.viewpagercards.viewpagercardsfeature.domain.models.Person;
 
 import java.util.ArrayList;
 import java.util.List;

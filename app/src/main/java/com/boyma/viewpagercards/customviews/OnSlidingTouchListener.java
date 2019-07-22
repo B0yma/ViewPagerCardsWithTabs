@@ -1,4 +1,4 @@
-package com.boyma.viewpagercards;
+package com.boyma.viewpagercards.customviews;
 
 import android.content.Context;
 import android.util.Log;

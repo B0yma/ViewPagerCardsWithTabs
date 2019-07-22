@@ -1,4 +1,4 @@
-package com.boyma.viewpagercards;
+package com.boyma.viewpagercards.viewpagercardsfeature;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;

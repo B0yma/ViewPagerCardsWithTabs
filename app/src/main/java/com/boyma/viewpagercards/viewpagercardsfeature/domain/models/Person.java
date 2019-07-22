@@ -1,4 +1,4 @@
-package com.boyma.viewpagercards.models;
+package com.boyma.viewpagercards.viewpagercardsfeature.domain.models;
 
 import java.io.Serializable;
 

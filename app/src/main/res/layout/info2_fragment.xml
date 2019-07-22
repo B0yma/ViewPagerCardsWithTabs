@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Info2Fragment.Info2Fragment">
+    tools:context=".viewpagercardsfeature.view.info2fragment.Info2Fragment">
 
     <TextView
         android:id="@+id/info2"

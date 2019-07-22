@@ -1,4 +1,4 @@
-package com.boyma.viewpagercards.ListFragment;
+package com.boyma.viewpagercards.viewpagercardsfeature.view.listfragment;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -13,9 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.boyma.viewpagercards.MainActivityViewModel;
+import com.boyma.viewpagercards.viewpagercardsfeature.MainActivityViewModel;
 import com.boyma.viewpagercards.R;
-import com.boyma.viewpagercards.models.Person;
+import com.boyma.viewpagercards.viewpagercardsfeature.domain.models.Person;
 import com.github.nitrico.lastadapter.LastAdapter;
 
 import java.util.ArrayList;

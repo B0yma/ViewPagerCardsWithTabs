@@ -1,4 +1,4 @@
-package com.boyma.viewpagercards.ListFragment;
+package com.boyma.viewpagercards.viewpagercardsfeature.view.listfragment;
 
 import android.arch.lifecycle.ViewModel;
 

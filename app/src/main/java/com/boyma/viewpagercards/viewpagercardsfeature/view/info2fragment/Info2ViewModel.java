@@ -1,4 +1,4 @@
-package com.boyma.viewpagercards.Info2Fragment;
+package com.boyma.viewpagercards.viewpagercardsfeature.view.info2fragment;
 
 import android.arch.lifecycle.ViewModel;
 

@@ -1,8 +1,10 @@
-package com.boyma.viewpagercards;
+package com.boyma.viewpagercards.customviews;
 
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.CardView;
 import android.view.View;
+
+import com.boyma.viewpagercards.viewpagercardsfeature.view.cardfragment.CardAdapter;
 
 public class ShadowTransformer implements ViewPager.OnPageChangeListener, ViewPager.PageTransformer {
 

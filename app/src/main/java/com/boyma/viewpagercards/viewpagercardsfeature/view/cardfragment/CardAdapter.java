@@ -1,4 +1,4 @@
-package com.boyma.viewpagercards;
+package com.boyma.viewpagercards.viewpagercardsfeature.view.cardfragment;
 
 
 import android.support.v7.widget.CardView;

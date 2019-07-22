@@ -14,8 +14,9 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<com.boyma.viewpagercards.CustomSwipeToRefresh
+<com.boyma.viewpagercards.customviews.CustomSwipeToRefresh
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/swipe_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -35,13 +36,11 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
 
-
-
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             app:titleEnabled="false">
 
 
@@ -71,7 +70,14 @@
                 android:background="?attr/colorPrimary"
                 app:layout_collapseMode="pin"
                 app:layout_scrollFlags="snap"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:src="@mipmap/ic_launcher" />
+            </android.support.v7.widget.Toolbar>
+
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -90,4 +96,4 @@
 
 
 </android.support.design.widget.CoordinatorLayout>
-</com.boyma.viewpagercards.CustomSwipeToRefresh>
+</com.boyma.viewpagercards.customviews.CustomSwipeToRefresh>
